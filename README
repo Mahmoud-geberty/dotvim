@@ -6,3 +6,12 @@ Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+
+Vundle setup:
+
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    
+    Launch vim and run :PluginInstall and you good to go!
+    
+    Note that vim plugin "youCompleteMe" needs some configuration, 
+    check it's documentation and configure it as per your needs.
