@@ -23,6 +23,10 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-repeat'
 
+"commenting plugin
+Plugin 'tpope/vim-commentary'
+
+
 "vim solarized colorscheme.
 Plugin 'altercation/vim-colors-solarized'
 
