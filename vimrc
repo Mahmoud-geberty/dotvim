@@ -15,6 +15,12 @@ Plugin 'VundleVim/Vundle.vim'
 "you complete me plugin
 Plugin 'valloric/youcompleteme'
 
+"You complete me auto conf generator
+Plugin 'rdnetto/YCM-Generator'
+
+" Color coded plugin
+Plugin 'jeaye/color_coded'
+
 
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -83,7 +89,7 @@ let g:used_javascript_libs = 'react, chai, vue, d3, jquery'
 
 "solarized colorscheme settings 
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 """""""""""""""""""""""
@@ -91,12 +97,14 @@ colorscheme solarized
 "UltiSnips config
 """"""
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="normal"
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 """""""""""""""""""""""""""
 
 autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
@@ -109,7 +117,7 @@ set smarttab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set expandtab
+"set expandtab
 
 set number
 set relativenumber " show relative line numbers
